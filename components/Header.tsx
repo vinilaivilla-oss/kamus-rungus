@@ -49,18 +49,18 @@ export default function Header() {
         </Link>
 
         <nav className="flex items-center gap-3 text-sm">
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-[#221F1B] hover:underline">
             Kamus
           </Link>
 
           {email && (
-            <Link href="/sumbang" className="hover:underline">
+            <Link href="/sumbang" className="text-[#221F1B] hover:underline">
               Sumbang
             </Link>
           )}
 
           {role && ['moderator', 'admin'].includes(role) && (
-            <Link href="/moderator" className="hover:underline">
+            <Link href="/moderator" className="text-[#221F1B] hover:underline">
               Moderator
             </Link>
           )}
